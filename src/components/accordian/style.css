@@ -4,6 +4,22 @@
     width: 100vw;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.wrapper button{
+    padding: 10px 20px;
+    background-color:#e3d9cf;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    margin-top: 5px;
+}
+.wrapper button:hover{
+    background-color:#52999b;
+    border: 1px solid black;
 }
 .accordian{
     width: 500px;
