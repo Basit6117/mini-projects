@@ -34,19 +34,19 @@ function Accordian() {
                                     setenableMultiSelection
                                         ? () => handleMultiSelection(dataItem.id)
                                         :() => handleSingleSelection(dataItem.id)}>
-                                <h2>{dataItem.title}</h2>
+                                <h2  key={dataItem.id}>{dataItem.title}</h2>
                                 <span>+</span>
                             </div>
                             
                               {  enableMultiSelection ?
                                   multiple.indexOf(dataItem.id) !== -1 && (
                                     <div className='content'>
-                                    <article>{dataItem.body}</article>
+                                    <article >{dataItem.body}</article>
                                 </div>
                                  ) :
                              selected === dataItem.id &&
                                ( <div className='content'>
-                                    <article>{dataItem.body}</article>
+                                    <article >{dataItem.body}</article>
                                 </div>
                                 )}
                                 {/* {selected === dataItem.id || multiple.indexOf(dataItem.id) !== -1 && (
