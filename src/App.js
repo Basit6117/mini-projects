@@ -5,6 +5,8 @@ import Newsapi from './components/accordian/Newsapi';
 import RandomColor from './components/random-color/RandomColor';
 import StarRating from './components/star-rating/StarRating';
 import Carasoul from './components/image-slider/Carousel';
+import Load from './components/load-data/Load';
+import QRCodeGen from './components/QRCode/QRCodeGen';
 
 function App() {
   return (
@@ -21,11 +23,17 @@ function App() {
 {/* <StarRating noOfStars={10} />*/}
 
 {/* image slider */}
-<Carasoul
+{/* <Carasoul
  url={"https://picsum.photos/v2/list"}
  limit={10}
  page={1}
- />
+ /> */}
+
+ {/* load more products */}
+ {/* <Load /> */}
+
+ {/* QR Code Generator */}
+ <QRCodeGen />
     </div>
   );
 }
